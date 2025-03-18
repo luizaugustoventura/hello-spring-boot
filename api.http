@@ -1,0 +1,28 @@
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Luiz",
+  "email": "luiz@email.com"
+}
+
+@userId = 46b3f585-ab4e-41a2-a437-5ddc016e64ec
+
+###
+GET http://localhost:8080/users/all
+
+###
+GET http://localhost:8080/users/{{userId}}
+
+###
+DELETE http://localhost:8080/users/{{userId}}
+
+
+###
+POST http://localhost:8080/users/{{userId}}/vehicles
+Content-Type: application/json
+
+{
+  "model": "Honda Civic 2020 2.0 16v flex automático",
+  "license_plate": "ABC1234"
+}
