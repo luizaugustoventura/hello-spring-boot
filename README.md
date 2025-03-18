@@ -1,3 +1,5 @@
+# hello-spring-boot
+
 This is a simple project I created in order to learn the basics of Java Spring Boot
 
 ## Main commands:
